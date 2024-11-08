@@ -1,0 +1,136 @@
+/* General Layout */
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f5; /* Light pink background */
+    padding-top: 300px;
+}
+
+header {
+    background-color: #d87ca8; /* Soft pink-purple for header */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #f7c2d0; /* Soft pink for buttons */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 0 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: #e090b5; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+nav button.active {
+    background-color: #f2b2d0; /* Light pink highlight for active */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Login Section Styling */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff5f8; /* Very light pink background */
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #d87ca8; /* Pink-purple for headings */
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #e0a3c3; /* Light pink border */
+    border-radius: 8px;
+    width: 100%;
+    background-color: #fff8fc; /* Very light pink input background */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #d87ca8; /* Pink-purple on focus */
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #f7c2d0; /* Soft pink button */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e090b5; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    nav button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
